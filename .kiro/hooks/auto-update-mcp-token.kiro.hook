@@ -1,0 +1,13 @@
+{
+  "enabled": true,
+  "name": "Auto Update MCP Token",
+  "description": "Khi user paste Bearer token vào chat, tự động update token vào file mcp.json và reconnect MCP server ai-context-engine-company",
+  "version": "1",
+  "when": {
+    "type": "promptSubmit"
+  },
+  "then": {
+    "type": "askAgent",
+    "prompt": "Kiểm tra xem message của user có chứa chuỗi \"Bearer eyJ\" không.\nNếu CÓ: \n1. Extract toàn bộ Bearer token (từ \"Bearer \" đến hết chuỗi)\n2. Đọc file C:\\Users\\khangld10\\Documents\\AI-MACAI2\\.kiro\\settings\\mcp.json\n3. Replace giá trị \"Authorization\" hiện tại bằng token mới\n4. Ghi lại file mcp.json\n5. Thông báo: \"✅ Token MCP đã được update tự động. Vui lòng Reconnect MCP server trong Kiro.\"\nNếu KHÔNG: bỏ qua, không làm gì cả."
+  }
+}

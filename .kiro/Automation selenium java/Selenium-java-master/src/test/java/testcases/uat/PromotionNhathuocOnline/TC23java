@@ -1,4 +1,4 @@
-﻿package testcases.uat.PromotionRsa;
+package testcases.uat.PromotionRsa;
 
 import java.io.InputStream;
 import java.io.InputStreamReader;

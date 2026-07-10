@@ -246,10 +246,10 @@ public class TC4 extends BaseTest1 {
 
         /*
          * =========================
-         * TC07 - NHẬP SĐT KHÁCH HÀNG 0835089291
+         * TC07 - NHẬP SĐT KHÁCH HÀNG 0835089290
          * =========================
          */
-        ExtentTest tc07 = test.createNode("TC07 - Nhập SĐT khách hàng 0835089291");
+        ExtentTest tc07 = test.createNode("TC07 - Nhập SĐT khách hàng 0835089290");
 
         Thread.sleep(1000);
 
@@ -258,11 +258,11 @@ public class TC4 extends BaseTest1 {
                 .until(ExpectedConditions.elementToBeClickable(
                         By.cssSelector("input[type='phone']")));
         phoneInput.click();
-        phoneInput.sendKeys("0835089291");
+        phoneInput.sendKeys("0835089290");
         phoneInput.sendKeys(Keys.ENTER);
         Thread.sleep(2000);
 
-        tc07.pass("Đã nhập SĐT khách hàng 0835089291");
+        tc07.pass("Đã nhập SĐT khách hàng 0835089290");
 
         /*
          * =========================

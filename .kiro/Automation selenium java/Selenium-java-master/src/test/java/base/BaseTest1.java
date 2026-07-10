@@ -135,7 +135,7 @@ public class BaseTest1 {
         }
 
         if (driver != null) {
-          //driver.quit();// bật tắt chrome
+         // driver.quit(); // mở ra là tắt chrome
         }
     }
 

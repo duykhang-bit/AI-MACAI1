@@ -33,7 +33,7 @@ public class TC4 extends BaseTest1 {
         // =================================================
         // FULL FLOW - TẠO CTKM (TC01 → TC06)
         // =================================================
-        @Test(priority = 1, description = "FLOW 1 - CTKM SẢN PHẨM", enabled = false)
+        @Test(priority = 1, description = "FLOW 1 - CTKM Đơn hàng", enabled = false)
 
         public void testCreatePromotionFlowNhomCTKMSanphamCI() {
 
@@ -80,7 +80,7 @@ public class TC4 extends BaseTest1 {
 
                 tc02.info("Nhập tên CTKM");
 
-                String promoName = "AT_25052026_115716";
+                String promoName = "import ĐƠN HÀNG__25052026_115716";
 
                 wait.until(ExpectedConditions.visibilityOfElementLocated(
                                 By.id("promotiongeneralinfor_name"))).sendKeys(promoName);
@@ -362,7 +362,7 @@ public class TC4 extends BaseTest1 {
         }
 
         // FLOW CTKM ĐƠN HÀNG
-        @Test(priority = 2, description = "FLOW 2 - CTKM ĐƠN HÀNG")
+        @Test(priority = 2, description = "FLOW 2 - CTKM Đơn hàng - Tổng tiền theo sản phẩm")
         public void testCreatePromotionFlowNhomCTKMDonhang() throws InterruptedException {
 
                 ExtentTest tc01 = test.createNode("TC01 - Login hệ thống");
@@ -390,7 +390,7 @@ public class TC4 extends BaseTest1 {
                                 By.xpath("//div[contains(@class,'actionHeader')]"))).click();
 
                 DateTimeFormatter formatter2 = DateTimeFormatter.ofPattern("ddMMyyyy_HHmmss");
-                String promoName2 = "Nhóm hàng giảm giá_" + LocalDateTime.now().format(formatter2);/// NOTE NAME
+                String promoName2 = "Đơn hàng - Tổng tiền theo sản phẩm_" + LocalDateTime.now().format(formatter2);/// NOTE NAME
                 wait.until(ExpectedConditions.visibilityOfElementLocated(
                                 By.id("promotiongeneralinfor_name"))).sendKeys(promoName2);
                 tc02.pass("Tạo CTKM OK: " + promoName2);

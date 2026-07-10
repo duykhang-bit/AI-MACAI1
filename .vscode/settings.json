@@ -1,4 +1,15 @@
 {
     "java.debug.settings.onBuildFailureProceed": true,
-    "java.configuration.updateBuildConfiguration": "automatic"
+    "java.configuration.updateBuildConfiguration": "automatic",
+    "java.compile.nullAnalysis.mode": "automatic",
+    "testing.showAllMessages": true,
+    "explorer.fileNesting.enabled": true,
+    "java.project.explorer.showNonJavaResources": true,
+    "java.project.explorer.packagePresentation": "hierarchical",
+    "java.test.config": {
+        "workingDirectory": "${workspaceFolder}"
+    },
+    "testing.automaticallyOpenPeekView": "never",
+    "java.test.message.showRunStatus": true,
+    "java.showBuildStatusOnStart.enabled": "notification"
 }

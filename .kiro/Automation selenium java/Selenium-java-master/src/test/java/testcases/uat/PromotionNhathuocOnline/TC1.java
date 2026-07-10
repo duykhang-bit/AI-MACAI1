@@ -104,7 +104,6 @@ public class TC1 extends BaseTest1 {
         // đóng pop_up
 
 
-
         //  WebElement btnClose = wait.until(
         //     ExpectedConditions.elementToBeClickable(
         //         By.xpath("//svg[contains(@class,'size-3.5')]/ancestor::div[1]")

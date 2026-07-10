@@ -675,6 +675,6 @@ public class TC7 extends BaseTest1 {
         System.out.println("MÃ ĐƠN HÀNG: " + orderCode);
         System.out.println("========================================");
 
-        test.pass("✅ PASS verify MUD - loại hàng giảm giá tặng phm PMH 130,000k-KM-0626-072 SP 00028493. Mã đơn: " + orderCode);
+        test.pass("✅ PASS verify MUD - loại hàng giảm giá tặng phm PMH 130,000k-KM-0726-0632 SP 00028493. Mã đơn: " + orderCode);
     }
 }

@@ -84,7 +84,7 @@ public class TC5 extends BaseTest1 {
 
 // Generate tên CTKM
                 DateTimeFormatter formatter = DateTimeFormatter.ofPattern("ddMMyyyy_HHmmss");
-                String promoName = "AT_" + LocalDateTime.now().format(formatter);
+                String promoName = "import sản phẩm_" + LocalDateTime.now().format(formatter);
 
                 wait.until(ExpectedConditions.visibilityOfElementLocated(
                         By.id("promotiongeneralinfor_name")

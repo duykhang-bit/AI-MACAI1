@@ -79,7 +79,7 @@ public class TC5 extends BaseTest1 {
 
                 tc02.info("Nhập tên CTKM");
 
-                String promoName = "AT_25052026_115716";
+                String promoName = "Mud import_25052026_115716";
 
                 wait.until(ExpectedConditions.visibilityOfElementLocated(
                                 By.id("promotiongeneralinfor_name"))).sendKeys(promoName);
