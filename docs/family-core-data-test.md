@@ -116,7 +116,7 @@ Card
 SDT 0775469190
 086215012345/ 0835089254
 
-0775465401
+0775465401 dùng test luôn có otp
 
 0775506894
 
@@ -139,14 +139,8 @@ Nếu rơi vào TH đặc biệt cho phép khai sai ngày:
 Nghiệm thu OT tháng N. Ngày dd/mm
 
 
-
-
-
-
 sau 22h mới tính đêm và không được quá 4 h ot 1 ngày
 note nagfy 23/03 còn 2 tiếng
-
-
 
 
 24-25 mới mở
@@ -154,7 +148,7 @@ note nagfy 23/03 còn 2 tiếng
 / mẫu test case
 
 
- tạo flow session trên RAI Portal ở phase Verify cho các tickets, rồi chuyển Done với cac ticket này: 
+ tạo flow session trên RAI Portal ở phase Verify cho các tickets, rồi chuyển session Done với cac ticket này:, và chuyển status ticket sang complete: 
 
 
 https://ptt-public.frt.vn/app/process-closing-shop#/dev

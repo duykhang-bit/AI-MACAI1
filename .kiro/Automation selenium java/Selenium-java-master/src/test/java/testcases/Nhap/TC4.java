@@ -1,4 +1,4 @@
-package testcases.uat.Family;
+package testcases.Nhap;
 
 import java.time.Duration;
 import java.util.HashMap;
@@ -25,7 +25,7 @@ import io.github.bonigarcia.wdm.WebDriverManager;
 import listeners.TestListener;
 
 @Listeners(TestListener.class)
-public class TC7 extends BaseTest1 {
+public class TC4 extends BaseTest1 {
 
     
 

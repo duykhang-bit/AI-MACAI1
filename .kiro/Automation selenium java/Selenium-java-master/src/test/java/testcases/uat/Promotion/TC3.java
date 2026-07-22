@@ -157,7 +157,7 @@ public class TC3 extends BaseTest1 {
                                                                                 "/ancestor::div[contains(@class,'ant-form-item')]"
                                                                                 +
                                                                                 "//input")));
-                soluong.sendKeys("15");
+                soluong.sendKeys("500");
 
                 // GROUP CODE
                 WebElement groupcode = wait.until(

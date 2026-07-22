@@ -1,59 +1,18 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
-<suite name="All Tests Suite" verbose="1" parallel="classes" thread-count="5">
+<suite name="All Tests Suite" verbose="1" parallel="classes" thread-count="4">
     <listeners>
         <listener class-name="listeners.TestListener"/>
         <listener class-name="utils.DashboardReportGenerator"/>
     </listeners>
 
     <!-- ===== CI Tests ===== -->
-    <test name="CI - Ecom Tests">
-        <packages>
-            <package name="testcases.ci.Ecom"/>
-        </packages>
-    </test>
 
-    <test name="CI - Eho Tests">
-        <packages>
-            <package name="testcases.ci.Eho"/>
-        </packages>
-    </test>
-
-    <test name="CI - Promotion Tests">
-        <packages>
-            <package name="testcases.ci.Promotion"/>
-        </packages>
-    </test>
 
     <!-- ===== UAT Tests ===== -->
     <test name="UAT - Family Tests">
         <packages>
             <package name="testcases.uat.Family"/>
-        </packages>
-    </test>
-
-    <test name="UAT - Promotion Tests">
-        <packages>
-            <package name="testcases.uat.Promotion"/>
-        </packages>
-    </test>
-
-    <test name="UAT - Promotion Nha Thuoc Online Tests">
-        <packages>
-            <package name="testcases.uat.PromotionNhathuocOnline"/>
-        </packages>
-    </test>
-
-    <test name="UAT - Promotion RSA Offline Tests">
-        <packages>
-            <package name="testcases.uat.PromotionRsaOffline"/>
-        </packages>
-    </test>
-
-    <!-- ===== Appium iOS Tests ===== -->
-    <test name="Appium iOS Tests">
-        <packages>
-            <package name="testcases.apiumios"/>
         </packages>
     </test>
 
@@ -63,5 +22,7 @@
 cd ".kiro/Automation selenium java/Selenium-java-master" && mvn clean test
 
 === RUN TỪNG NHÓM ===
-Sửa testng.xml: comment out các <test> không cần, giữ lại nhóm muốn chạy
+cd "C:\Users\khangld10\Documents\AI-MACAI2\.kiro\Automation selenium java\Selenium-java-master"
+mvn clean test
+
 -->

@@ -1,4 +1,4 @@
-package testcases.ci.Family;
+package testcases.Nhap;
 
 import java.time.Duration;
 import java.util.HashMap;
@@ -25,11 +25,13 @@ import io.github.bonigarcia.wdm.WebDriverManager;
 import listeners.TestListener;
 
 @Listeners(TestListener.class)
-public class TC1 extends BaseTest1 {
+public class TC5 extends BaseTest1 {
+
+    
 
     @Override
     protected String getBaseUrl() {
-        return "https://ci-rsa-web.frt.vn/";
+        return "https://uat-rsa-web.frt.vn/";
     }
 
     @Override
@@ -256,7 +258,7 @@ public class TC1 extends BaseTest1 {
                 .until(ExpectedConditions.elementToBeClickable(
                         By.cssSelector("input[type='phone']")));
         phoneInput.click();
-        phoneInput.sendKeys("0835089254");
+        phoneInput.sendKeys("0835089290");
         phoneInput.sendKeys(Keys.ENTER);
         Thread.sleep(2000);
 
@@ -279,8 +281,8 @@ public class TC1 extends BaseTest1 {
         js.executeScript("arguments[0].click(); arguments[0].focus();", productInput);
         Thread.sleep(500);
 
-        // Clear ô search (Windows: CTRL+A rồi DELETE)
-        js.executeScript("arguments[0].value = '';", productInput);
+        // Clear ô search (Windows: JS clear + CTRL+A + DELETE)
+        js.executeScript("arguments[0].value = ''", productInput);
         productInput.sendKeys(Keys.chord(Keys.CONTROL, "a"));
         Thread.sleep(200);
         productInput.sendKeys(Keys.DELETE);
@@ -366,7 +368,7 @@ public class TC1 extends BaseTest1 {
         Thread.sleep(500);
 
         // Clear ô search (Windows: JS clear + CTRL+A + DELETE)
-        js.executeScript("arguments[0].value = '';", productInput2);
+        js.executeScript("arguments[0].value = ''", productInput2);
         productInput2.sendKeys(Keys.chord(Keys.CONTROL, "a"));
         Thread.sleep(200);
         productInput2.sendKeys(Keys.DELETE);
@@ -527,3 +529,4 @@ public class TC1 extends BaseTest1 {
         test.pass("✅ Hoàn thành flow tạo đơn bán hàng RSA Web. Mã đơn: " + orderCode);
     }
 }
+

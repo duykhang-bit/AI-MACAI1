@@ -1,4 +1,4 @@
-package testcases.ci.Family;
+package testcases.Nhap;
 
 import java.time.Duration;
 import java.util.HashMap;
@@ -31,7 +31,7 @@ public class TC6 extends BaseTest1 {
 
     @Override
     protected String getBaseUrl() {
-          return "https://ci-rsa-web.frt.vn/";
+        return "https://uat-rsa-web.frt.vn/";
     }
 
     @Override
